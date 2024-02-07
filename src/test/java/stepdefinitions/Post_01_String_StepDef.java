@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
 import static baseUrl.Reqres_BaseUrl.specification;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -63,4 +62,7 @@ public class Post_01_String_StepDef {
         assertEquals(expectedJob,actualJob);
 
     }
+
+
+
 }
