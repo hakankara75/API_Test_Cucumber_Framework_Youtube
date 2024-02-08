@@ -1,4 +1,4 @@
-@postMap
+@postTMap
 Feature: post map
   Scenario: post map
     Given kullanici https://jsonplaceholder.typicode.com/todos sitesine gider
