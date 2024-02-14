@@ -93,6 +93,10 @@ public class Post_03_TestData_Map_StepDef {
 
         assertEquals(((Map)expectedData.get("bookingdates")).get("checkin"), ((Map)((Map)actualData.get("booking")).get("bookingdates")).get("checkin"));
         assertEquals(((Map)expectedData.get("bookingdates")).get("checkout"), ((Map)((Map)actualData.get("booking")).get("bookingdates")).get("checkout"));
+
+        String bookingId = actualData.get("bookingid").toString();
+        System.out.println("bookingId = " + bookingId);
+
         /*
         {
 

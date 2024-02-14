@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         features="src/test/resources",
         glue= {"stepdefinitions","hooks"},
-        tags= "@postTestData",//Çalışacak scenarioları belirtir.
+        tags= "@patch",//Çalışacak scenarioları belirtir.
         dryRun= false
 )
 public class Runner {

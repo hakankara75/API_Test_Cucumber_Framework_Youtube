@@ -12,8 +12,8 @@ public class Hooks {
     @Before
     public void before(){
        // setup();
-       //  setupJson();
-        setupHerokuapp();
+       setupJson();
+        // setupHerokuapp();
 
     }
 }
