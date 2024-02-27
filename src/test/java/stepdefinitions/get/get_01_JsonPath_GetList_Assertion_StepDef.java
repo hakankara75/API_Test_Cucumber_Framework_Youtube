@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.get;
 
 import baseUrl.JsonPlaceHolder_BaseUrl;
 import io.cucumber.java.en.And;
