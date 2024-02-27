@@ -3,8 +3,9 @@ package hooks;
 import io.cucumber.java.Before;
 
 
-import static baseUrl.Faker_BaseUrl.setUpFaker;
-import static baseUrl.Gorest_BaseUrl.setupGorest;
+
+import static baseUrl.PetStore_BaseUrl.setupPetStore;
+
 
 
 public class Hooks {
@@ -15,7 +16,9 @@ public class Hooks {
        //setupJson();
        //  setupHerokuapp();
        // setUpFaker();
-        setupGorest();
+     //  setupGorest();
+        setupPetStore();
+
 
     }
 }
