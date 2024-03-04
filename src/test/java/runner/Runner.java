@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         features="src/test/resources",
         glue= {"stepdefinitions","hooks"},
-        tags= "@patchHeroku",
+        tags= "@mapObjectMapper",
         dryRun= false
 )
 public class Runner {

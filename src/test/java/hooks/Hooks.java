@@ -12,13 +12,13 @@ public class Hooks {
 
     @Before
     public void before(){
-       // setup();
+      setup();
        //setupJson();
        //  setupHerokuapp();
        // setUpFaker();
      //  setupGorest();
         // setupPetStore();
-        setupHerokuapp_Authentication();
+        //  setupHerokuapp_Authentication();
 
     }
 }
