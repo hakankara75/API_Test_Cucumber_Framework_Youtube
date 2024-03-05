@@ -3,6 +3,7 @@ package stepdefinitions.post;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static baseUrl.Reqres_BaseUrl.specification;
@@ -62,6 +63,7 @@ public class Post_01_String_StepDef {
         assertEquals(expectedJob,actualJob);
 
     }
+
 
 
 }
