@@ -46,7 +46,7 @@ THEN
     @Given("patch icin herokuapp urle gidilir")
     public void patchIcinHerokuappUrleGidilir() {
         //1-set the url
-        specHerokuXML_Authorization.pathParams("a", "booking", "b",5);
+        specHerokuXML_Authorization.pathParams("first", "booking", "second", 1);
     }
 
     @And("patch icin expected data olusturulur")
@@ -58,7 +58,8 @@ THEN
     @And("patch icin request gonderilir response alinir")
     public void patchIcinRequestGonderilirResponseAlinir() {
         //3- send the request and get the response
-        response= given(specHerokuXML_Authorization).body(expected).patch("{a}/{b}");
+        String xmlData = "<booking><firstname>Maho</firstname><lastname>Ağa</lastname></booking>";
+        response= given(specHerokuXML_Authorization).body(xmlData).patch("{first}/{second}");
         response.prettyPrint();
     }
 
