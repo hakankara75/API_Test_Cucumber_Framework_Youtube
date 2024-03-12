@@ -1,4 +1,4 @@
-package pojo.PetStore;
+package pojo.PetStore.JSON;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

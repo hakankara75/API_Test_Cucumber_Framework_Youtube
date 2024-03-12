@@ -3,11 +3,10 @@ package stepdefinitions.put;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import io.restassured.response.Response;
-import pojo.PetStore.PetStore_Category_Pojo;
-import pojo.PetStore.PetStore_ExpectedPojo;
-import pojo.PetStore.PetStore_Tags_Pojo;
+import pojo.PetStore.JSON.PetStore_Category_Pojo;
+import pojo.PetStore.JSON.PetStore_ExpectedPojo;
+import pojo.PetStore.JSON.PetStore_Tags_Pojo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
