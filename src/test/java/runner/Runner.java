@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         features="src/test/resources",
         glue= {"stepdefinitions","hooks"},
-        tags= "@xmlPost",
+        tags= "@petXMLPost",
         dryRun= false
 )
 public class Runner {

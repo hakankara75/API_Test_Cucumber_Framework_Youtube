@@ -8,6 +8,7 @@ import static baseUrl.Herokuapp_BaseUrl_Authentication.setupHerokuapp_Authentica
 import static baseUrl.Herokuapp_XML_BaseUrl.setupHerokuapp_XML;
 import static baseUrl.PetStore_BaseUrl.setupPetStore;
 import static baseUrl.PetStore_BaseUrl_XML.setupPetStore_XML;
+import static baseUrl.PetStore_BaseUrl_XML_Post_Jsoup.setupPetStore_XML_Post_Jsoup;
 import static baseUrl.Reqres_BaseUrl.setup;
 
 
@@ -23,6 +24,7 @@ public class Hooks {
       // setupPetStore();
         //   setupHerokuapp_Authentication();
         //setupHerokuapp_XML();
-        setupPetStore_XML();
+        //setupPetStore_XML();
+        setupPetStore_XML_Post_Jsoup();
            }
 }
