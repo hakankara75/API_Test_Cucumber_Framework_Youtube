@@ -4,7 +4,7 @@ pipeline {
         stage('API Compile') {
             steps {
                 script {
-                    withMaven(maven: 'maven_3_9_6') {
+                    withMaven(maven: '3_9_6') {
                         sh 'mvn clean compile'
                     }
                 }
@@ -13,7 +13,7 @@ pipeline {
         stage('API Testing') {
             steps {
                 script {
-                    withMaven(maven: 'maven_3_9_6') {
+                    withMaven(maven: '3_9_6') {
                         sh 'mvn test'
                     }
                 }
@@ -22,7 +22,7 @@ pipeline {
         stage('API Deployment') {
             steps {
                 script {
-                    withMaven(maven: 'maven_3_9_6') {
+                    withMaven(maven: '3_9_6') {
                         sh 'mvn deploy'
                     }
                 }
