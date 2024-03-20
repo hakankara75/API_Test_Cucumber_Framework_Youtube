@@ -10,23 +10,6 @@ pipeline {
                 }
             }
         }
-        stage('API Testing') {
-            steps {
-                script {
-                    withMaven(maven: 'maven_3_9_6') {
-                        sh 'mvn test'
-                    }
-                }
-            }
-        }
-        stage('API Deployment') {
-            steps {
-                script {
-                    withMaven(maven: 'maven_3_9_6') {
-                        sh 'mvn deploy'
-                    }
-                }
-            }
-        }
+
     }
 }
