@@ -5,18 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class PetStore_ExpectedPojo {
-
+public class Category {
     private int id;
-    private PetStore_Category_Pojo category;
     private String name;
-    private List<String> photoUrls;
-    private List<PetStore_Tags_Pojo> tags;
-    private String status;
 }

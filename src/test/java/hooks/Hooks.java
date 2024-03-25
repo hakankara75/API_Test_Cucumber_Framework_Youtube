@@ -18,14 +18,14 @@ public class Hooks {
     @Before
     public void before(){
         // setup();
-      setupJson();
+      //setupJson();
        //  setupHerokuapp();
       // setUpFaker();
      //  setupGorest();
-      // setupPetStore();
+       setupPetStore();
         //   setupHerokuapp_Authentication();
         //setupHerokuapp_XML();
-        setupPetStore_XML();
+       // setupPetStore_XML();
         //setupPetStore_XML_Post_Jsoup();
            }
 }
