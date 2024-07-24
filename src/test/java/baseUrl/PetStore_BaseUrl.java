@@ -9,6 +9,7 @@ public class PetStore_BaseUrl {
     public static void setupPetStore(){
         specPetStore=new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
+                .setAccept(ContentType.JSON)
                 .setBaseUri("https://petstore.swagger.io/v2/").build();
     }
 

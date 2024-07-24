@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Reqres_BaseUrl {
     public static RequestSpecification specification;
-    public static void setup(){
+    public static void setupReqres(){
         specification=new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .setAccept(ContentType.JSON)

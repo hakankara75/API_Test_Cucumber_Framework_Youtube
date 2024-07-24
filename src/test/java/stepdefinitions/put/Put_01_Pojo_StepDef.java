@@ -60,6 +60,7 @@ And response body should be
 
     @Then("faker response dogrulanir")
     public void fakerResponseDogrulanir() {
+        //4- do assertion
         Faker_Pojo actualData=response.as(Faker_Pojo.class);
 
         assertEquals(200, response.statusCode());

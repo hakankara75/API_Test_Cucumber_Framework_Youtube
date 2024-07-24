@@ -35,8 +35,9 @@ public class Post_02_Map_StepDef {
    */
     Map<String, Object> expectedData;
     Response response;
-    @Given("kullanici jsonplaceholder.typicode.com\\/todos sitesine gider")
-    public void kullaniciJsonplaceholderTypicodeComTodosSitesineGider() {
+
+    @Given("kullanici jsonplaceholder.typicode.com {string} sitesine gider")
+    public void kullaniciJsonplaceholderTypicodeComSitesineGider(String arg0) {
         //1- set the url
         spec.pathParam("a", "todos");
 

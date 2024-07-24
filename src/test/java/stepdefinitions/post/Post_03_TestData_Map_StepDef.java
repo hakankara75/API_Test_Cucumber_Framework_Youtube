@@ -60,6 +60,7 @@ public class Post_03_TestData_Map_StepDef {
 
         //2- set the expected data
         //serialization
+        //utilities altındaki Herokuapp_TestData class oluşturulur önce
         Herokuapp_TestData obje=new Herokuapp_TestData();
         bookingDatesMap= obje.bookingdatesMapMethod("2024-01-01","2024-02-01" );
         expectedData= obje.outherMapMethod("hakan", "kara",275,
