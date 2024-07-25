@@ -13,14 +13,37 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 
 public class Put_02_Pojo_Authorization {
+/*
+ Given
+      1) https://gorest.co.in/public/v2/users/6940396
+{
+"name":"hakan",
+"email":"hakan@hakan.com",
+"gender":"male",
+"status":"active"
+}
+ When
+        I send POST Request to the Url
+    Then
+       Status code is 200
+    And
+       response body is like
 
+{
+    "email": "hakan@hakan.test",
+    "name": "hakan",
+    "gender": "male",
+    "status": "active",
+    "id": 6940396
+}
+ */
     Response response;
     Gorest_Pojo expectedData;
     @Given("gorest urle gidilir ve url olusturulur")
     public void gorestUrleGidilirVeUrlOlusturulur() {
 
         //1- set the url
-        spec.pathParams("a", "public", "b", "v2","c", "users","d", 2139082);
+        spec.pathParams("a", "public", "b", "v2","c", "users","d", 6940396);
     }
 
     @And("gorest expected data olusturulur ve gonderilir")
@@ -48,7 +71,7 @@ public class Put_02_Pojo_Authorization {
         response.then()
                 .assertThat()
                 .body("id", notNullValue())
-                .body("id", equalTo(2139082));
+                .body("id", equalTo(6940396));
 
     }
 
